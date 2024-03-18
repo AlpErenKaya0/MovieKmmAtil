@@ -37,7 +37,6 @@ android {
         jvmTarget = "1.8"
     }
 }
-
 dependencies {
     implementation(project(":shared"))
     implementation("androidx.compose.ui:ui:1.4.3")
@@ -46,4 +45,14 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.4.3")
     implementation("androidx.compose.material:material:1.4.3")
     implementation("androidx.activity:activity-compose:1.7.1")
+
+    val koinComposeVersion = "3.4.1"
+    val coilVersion = "2.2.2"
+    val accompanistVersion = "0.28.0"
+    val navVersion = "2.5.3"
+
+    implementation("io.insert-koin:koin-androidx-compose:$koinComposeVersion")
+    implementation("io.coil-kt:coil-compose:$coilVersion")
+    implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
+    implementation("androidx.navigation:navigation-compose:$navVersion")
 }
